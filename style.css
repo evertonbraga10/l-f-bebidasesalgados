@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2? family= Sarala:wght@400;700 & display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Sarala', sans-serif;
+}
+
+/* header */
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+header p{
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+    background-color: #0F0F0F;
+    padding: 1rem;
+    position: relative;
+    top: 0;
+    box-shadow: 8px 8px 10px #2c2c2c;
+}
+
+.navbar a{
+    color: inherit;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-self: center;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container img{
+    width: 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.nav-icon-container img:first-child{
+    margin-right: 1rem;
+}
+
+.nav-icon-container img:hover{
+    transform: translateY(-5px);
+}
+
+nav ul li{
+    color: #fff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.4s;
+    font-weight: bold;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.header-botton-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.header-botton-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-botton-side-left h2{
+    font-size: 3.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-botton-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.header-botton-side-right{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+.header-botton-side-right img{
+    width: 25%;
+}
+
+/* media queries */
+
+@media (max-width: 800px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .header-botton-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav{
+        position: absolute;
+        background-color: #0F0F0F;
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+/* header */
+
+/* conteudo principal */
+
+main{
+    background-color: #ffffff;
+}
+
+.backgroud{
+    background-color: #2C2C2C;
+    padding: 40px;
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.page-inner-content h2{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.page-inner-content span{
+    margin: 1rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: all .5s;
+}
+
+.card:hover{
+    background-image: radial-gradient(#fff, #c7c7c7)
+}
+
+.card .img {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-image: url('img/saca\ carvao.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img2 {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-image: url('img/garrafao.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-image: url('img/salgadOS.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card:hover .img, .img2, .img3 {
+    opacity: 1;
+}
+
+.card:hover .img, .img2, .img3 span {
+    font-size: 28px;
+}
+
+.card .content {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 200px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 18px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+    display: flex;
+    text-align: center;
+}
+
+.card .arrow {
+    color: #000000;
+    padding: 10px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 28px;
+}
+
+/* info-product */
+.info-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+}
+
+.info-product i{
+    font-size: 5rem;
+}
+
+.cols{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+/* .cols-4 img{
+    max-width: 100%;
+} */
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: #0084ff;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+.product{
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+}
+
+.product img{
+    width: 150px;
+    height: 130px;
+}
+
+.product-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+.product-price span{
+    font-weight: 600;
+}
+
+.info-background{
+    background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+.exclusive-container{
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+.exclusive-container img{
+    max-width: 500px;
+}
+
+/* Media queries */
+
+@media (max-width: 800px){
+    .section-title{
+        font-size: 1rem;
+    }
+
+    .container, .card, .img{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .info-product{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cols-4{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .product-name, .product-price, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+
+    .exclusive-container{
+        flex-direction: column-reverse;
+    }
+
+    .exclusive-container img{
+        margin-bottom: 4rem;
+    }
+
+    .comentarios{
+        flex-direction: column;
+    }
+
+    .comentario{
+        margin-bottom: 1.2rem;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    .footer-content>div{
+        padding: 1rem;
+    }
+
+    .copyright{
+        font-size: 0.8rem;
+    }
+}
+
+/* main content */
+
+/* comentarios */
+.comentarios{
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+
+/* comentario */
+.comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.comentario:hover{
+    transform: translateY(-5px);
+}
+
+.comentario p{
+    margin: 5px 0;
+}
+
+.comentario p:first-child{
+    font-weight: bold;
+    font-size: 5rem;
+    color: #0084ff;
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+.comentario p:last-child{
+    font-weight: bold;
+}
+
+/* rodape */
+.rodape-background{
+    background: #2c2c2c;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #8f8f8f;
+    padding: 4rem 1rem;
+    gap: 6rem;
+}
+
+.local>*{
+    margin: 1rem 0;
+}
+
+.local>h3:first-child{
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo-footer{
+    text-align: center;
+}
+
+.logo-footer h1{
+    padding-top: 10px;
+    font-size: 3.2rem;
+}
+
+.logo-footer p{
+    font-size: 1.2rem;
+}
+
+.logo-footer img{
+    /*border-radius: 100%;*/
+    width: 150px;
+}
+
+.logo-footer p{
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.links-footer h3{
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.loja{
+    background: #0F0F0F;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0.8rem;
+}
+
+.links-footer-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.links-footer-icons-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all 0.4s;
+}
+
+.links-footer-icons-social i{
+    font-size: 1.5rem;
+}
+
+.links-footer-icons-social:hover{
+    color: var(--color-neutral-40);
+    transform: translateY(-5px);
+}
+
+/* PARA FUTURO BTN DE INSTAGRAM E FACEBOOK
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+*/
+
+#whats{
+    background-color: #25d366;
+}
+
+.copyright{
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#div-fixa{
+    position: fixed;
+    bottom: 20px;
+    margin: 0 20px;
+    background: rgb(89, 245, 122);
+    width: 230px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+#div-fixa.shrink {
+    width: 50px;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+
+#div-fixa img{
+    width: 50px;
+    height: 50px;
+}
+
+#div-fixa a .flex-itens{
+    display: flex;
+    align-items: center;
+}
+
+#div-fixa a .flex-itens span{
+    display: block;
+    font-weight: bold;
+    color: #040305;
+    margin-left: 5px;
+    font-size: 18px;
+    min-width: 170px;
+    opacity: 0;
+}
+
+#div-fixa a .flex-itens span.aparecer{
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.flutuar{
+    animation-name: flutuar;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar {
+    from{
+        transform: translate3d(0,0,0);
+        filter: brightness(100%);
+    }
+    to{
+        transform: translate3d(0,-15px,0);
+        filter: brightness(150%); 
+    }
+}
