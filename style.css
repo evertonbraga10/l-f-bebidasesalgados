@@ -403,6 +403,11 @@ main{
     margin-top: 0.4rem;
 }
 
+.rate{
+    color: #0084ff;
+    font-size: 1.3rem;
+}
+
 .product-price span{
     font-weight: 600;
 }
